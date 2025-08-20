@@ -14,9 +14,8 @@ Automatización de descarga y gestión de archivos desde Google Cloud Storage (G
 
 ## 🧰 Requisitos
 
-- Windows 10/11
-- Python 3.9 o superior
-- Google Cloud SDK instalado (incluye `gsutil`)
+- Google Cloud SDK instalado (incluye `gsutil`) https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe?hl=es-419
+- Python 3.9 o superior https://www.python.org/ftp/python/3.13.7/python-3.13.7-amd64.exe
 - `colorama` para los logs de colores:
   ```PowerShell
   pip install colorama
