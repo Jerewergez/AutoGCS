@@ -3,11 +3,6 @@
   <img width="600" src="https://github.com/user-attachments/assets/902f4638-7937-43d1-97ee-1f1dd6a32c56" alt="AutoGCS Team Logo" />
 </p>
 
-<!-- Espacio para logo institucional -->
-<p align="center">
-  <em>[Espacio reservado para logo institucional]</em>
-</p>
-
 # AutoGCS
 
 Automatización de descarga y gestión de archivos desde Google Cloud Storage (GCS) usando `gsutil`, orientado a entornos Windows con archivos `.csv` y `.gz`.
