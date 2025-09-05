@@ -25,7 +25,7 @@ Automatización de descarga y gestión de archivos desde Google Cloud Storage (G
 
 ```powershell
 pip install colorama
-
+```
 
 ##  📁 Estructura esperada
 ```Estructura
@@ -33,7 +33,7 @@ D:\
 │
 ├── Bases Crudas\
 │   └── [Categorías: RETENCIÓN, FCR, etc.]\
-│       └── [Subcarpetas por tipo o mes]
+│       └── [Subcarpetas por tipo & mes]
 │
 └── Backup Bases Crudas\
     ├── Logs\
@@ -56,25 +56,25 @@ Descargar bases diarias (DIARIOS)
 Descargar cierres de un mes específico (CIERRES)
 ```
 
-🔐 Configuración de entorno: gsutil
+## 🔐 Configuración de entorno: gsutil
 
 Para que el script detecte gsutil automáticamente, asegurate de:
 
 Instalar Google Cloud SDK desde: https://cloud.google.com/sdk/docs/install
 
 Agregar gsutil al PATH del sistema:
-
+```PowerShell
 Instrucciones para Windows:
 [Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin", [EnvironmentVariableTarget]::Machine)
-
+```
 
 Luego reiniciar PowerShell o el sistema para que se reconozca el cambio.
 
 Verificá con:
-
+```PowerShell
 gsutil version
-
-🗓️ Automatización con Tareas Programadas
+```
+##🗓️ Automatización con Tareas Programadas
 
 Abrí “Tareas Programadas” en Windows.
 
@@ -86,19 +86,17 @@ Argumentos: ruta completa del script (ej: D:\AutoGCS\actualizacion_bases.py)
 
 Inicio en: directorio del script
 
-Activá opción “Ejecutar con privilegios más altos”.
-
 Podés programar diariamente o mensual según el tipo de base.
 
-🧾 Registro y trazabilidad
+##🧾 Registro y trazabilidad
 
 Cada acción se documenta en:
-
+```
 Logs\CierresActualizaciones.log: registro completo con timestamp y colores.
 
 Logs\Documentacion_CierresActualizaciones.csv: lista de archivos procesados y estado (Actualizado, Sin cambios, No disponible, etc.).
-
-🧪 Estado del proyecto
+```
+##🧪 Estado del proyecto
 
 ✔️ Funcional para Windows
 ✔️ Compatible con GCS
