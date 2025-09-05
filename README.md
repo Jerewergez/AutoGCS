@@ -74,7 +74,7 @@ Verificá con:
 ```PowerShell
 gsutil version
 ```
-##🗓️ Automatización con Tareas Programadas
+## 🗓️ Automatización con Tareas Programadas
 
 Abrí “Tareas Programadas” en Windows.
 
@@ -88,7 +88,7 @@ Inicio en: directorio del script
 
 Podés programar diariamente o mensual según el tipo de base.
 
-##🧾 Registro y trazabilidad
+## 🧾 Registro y trazabilidad
 
 Cada acción se documenta en:
 ```
@@ -96,7 +96,7 @@ Logs\CierresActualizaciones.log: registro completo con timestamp y colores.
 
 Logs\Documentacion_CierresActualizaciones.csv: lista de archivos procesados y estado (Actualizado, Sin cambios, No disponible, etc.).
 ```
-##🧪 Estado del proyecto
+## 🧪 Estado del proyecto
 
 ✔️ Funcional para Windows
 ✔️ Compatible con GCS
